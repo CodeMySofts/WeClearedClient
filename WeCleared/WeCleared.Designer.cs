@@ -53,7 +53,7 @@
             // 
             // tmrRefresh
             // 
-            this.tmrRefresh.Interval = 500000;
+            this.tmrRefresh.Interval = 60000;
             this.tmrRefresh.Tick += new System.EventHandler(this.tmrRefresh_Tick);
             // 
             // lblPath

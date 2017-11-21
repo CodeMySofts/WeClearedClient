@@ -65,6 +65,7 @@
             this.txtDescription.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDescription.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtDescription.Font = new System.Drawing.Font("Franklin Gothic Medium", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescription.ForeColor = System.Drawing.Color.White;
             this.txtDescription.Location = new System.Drawing.Point(12, 129);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.ReadOnly = true;
@@ -96,7 +97,7 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(129, 31);
             this.btnBack.TabIndex = 16;
-            this.btnBack.Text = "Retourner";
+            this.btnBack.Text = "Fermer";
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 

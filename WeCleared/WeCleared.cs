@@ -186,6 +186,7 @@ namespace WeCleared
         /// <param name="e"></param>
         private void tmrRefresh_Tick(object sender, EventArgs e)
         {
+            Updater?.DoUpdate();
             if (IsWoWPathValid(WoWPath))
             {
                 AddonsParser.Parse();
@@ -496,11 +497,11 @@ namespace WeCleared
         /// Url utilisé pour la mise à jour de l'application
         /// </summary>
 #if DEBUG
-        public Uri UpdateXmlLocation => new Uri("http://192.168.0.59:44443/update/debug/update.xml");
+        public Uri UpdateXmlLocation => new Uri("http://192.168.0.59:44443/api/weclearedclient/version/3");
 #elif LOCAL
-        public Uri UpdateXmlLocation => new Uri("http://192.168.0.59:44443/update/local/update.xml");
+        public Uri UpdateXmlLocation => new Uri("http://192.168.0.59:44443/api/weclearedclient/version/2");
 #else
-        public Uri UpdateXmlLocation => new Uri("http://" + Dns.GetHostAddresses("codemylife.ca")[0] + ":44443" + "/update/release/update.xml");
+        public Uri UpdateXmlLocation => new Uri("http://" + Dns.GetHostAddresses("codemylife.ca")[0] + ":44443" + "/api/weclearedclient/version/1");
 #endif
 
         /// <summary>

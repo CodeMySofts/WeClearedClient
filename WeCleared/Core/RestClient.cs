@@ -51,7 +51,7 @@ namespace WeCleared.Core
             {
                 var l_ResponseValue = string.Empty;
 
-                var l_Resquest = (HttpWebRequest)HttpWebRequest.Create(EndPoint);
+                var l_Resquest = (HttpWebRequest)HttpWebRequest.Create(EndPoint + "get?type=json");
                 l_Resquest.ContentType = "application/json";
                 l_Resquest.Method = HttpMethod.ToString();
                 l_Resquest.Accept = "application/json; odata=verbose";

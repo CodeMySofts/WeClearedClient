@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace WeCleared.Core
 {
@@ -62,9 +63,6 @@ namespace WeCleared.Core
             }
             catch
             {
-#if DEBUG
-                MessageBox.Show("Erreur survenue en tentant de lire " + FileName);
-#endif
             }
         }
 
@@ -84,9 +82,6 @@ namespace WeCleared.Core
             }
             catch
             {
-#if DEBUG
-                MessageBox.Show("Erreur survenue en tentant d'écrire dans " + FileName);
-#endif
             }
         }
 
